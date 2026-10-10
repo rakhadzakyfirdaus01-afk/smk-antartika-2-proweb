@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPDB 2026/2027 — SMK Antartika 2 Sidoarjo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. NAVBAR
+       ========================================================================== -->
+  <div class="navbar">
+    <div class="logo">
+      🏫 SMK Antartika 2 Sidoarjo
+      <span class="logo-badge">Terakreditasi A</span>
+    </div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="jurusan.html">Jurusan</a>
+      <a href="testimoni.html">Testimoni Alumni</a>
+      <a href="pendaftaran.html" class="active">PPDB 2026</a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       PAGE HEADER
+       ========================================================================== -->
+  <div class="page-header">
+    <span class="badge-hero">Tahun Ajaran 2026/2027</span>
+    <h1>Pendaftaran Peserta Didik Baru (PPDB)</h1>
+    <p>Bergabunglah bersama keluarga besar SMK Antartika 2 Sidoarjo. Siapkan masa depanmu menjadi profesional siap kerja dan wirausaha mandiri!</p>
+  </div>
+
+  <!-- ==========================================================================
+       CONTAINER PENDAFTARAN (FLEXBOX FORM + INFO)
+       ========================================================================== -->
+  <div class="pendaftaran-container">
+    
+    <!-- FORMULIR ONLINE -->
+    <div class="form-box">
+      <h2 style="color: #1E2761; margin-bottom: 8px; font-size: 22px;">Formulir Pendaftaran Online</h2>
+      <p style="color: #64748b; font-size: 13.5px; margin-bottom: 22px;">Silakan lengkapi data calon peserta didik baru di bawah ini dengan benar.</p>
+      
+      <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Terima kasih! Formulir pendaftaran berhasil dikirim. Panitia PPDB SMK Antartika 2 Sidoarjo akan segera menghubungi nomor WhatsApp Anda.');">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap Siswa</label>
+          <input type="text" id="nama" name="nama" placeholder="Contoh: Rakha Dzaky Firdaus" required>
+        </div>
+
+        <div class="form-group">
+          <label for="nisn">Nomor Induk Siswa Nasional (NISN)</label>
+          <input type="text" id="nisn" name="nisn" placeholder="10 Digit NISN SMP" required>
+        </div>
+
+        <div class="form-group">
+          <label for="sekolah_asal">Asal Sekolah (SMP / MTs)</label>
+          <input type="text" id="sekolah_asal" name="sekolah_asal" placeholder="Contoh: SMPN 1 Sidoarjo" required>
+        </div>
+
+        <div class="form-group">
+          <label for="jurusan">Pilihan Konsentrasi Keahlian (Jurusan)</label>
+          <select id="jurusan" name="jurusan" required>
+            <option value="" disabled selected>-- Pilih Salah Satu Jurusan --</option>
+            <option value="RPL">Rekayasa Perangkat Lunak (RPL) - Coding & Web</option>
+            <option value="TKJ">Teknik Komputer & Jaringan (TKJ) - Network & Cloud</option>
+            <option value="DKV">Desain Komunikasi Visual (DKV) - Multimedia & Animasi</option>
+            <option value="AK">Akuntansi & Keuangan Lembaga (AK) - Finance & Pajak</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="whatsapp">Nomor WhatsApp Aktif (Siswa/Wali)</label>
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="Contoh: 081234567890" required>
+        </div>
+
+        <div class="form-group">
+          <label for="alamat">Alamat Domisili Lengkap</label>
+          <textarea id="alamat" name="alamat" rows="3" placeholder="Nama jalan, RT/RW, kelurahan, kecamatan, kabupaten" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Kirim Pendaftaran Sekarang</button>
+      </form>
+    </div>
+
+    <!-- INFORMASI & PERSYARATAN -->
+    <div class="info-pendaftaran">
+      <h3 style="color: #1E2761; margin-bottom: 12px; font-size: 19px;">📋 Syarat Pendaftaran</h3>
+      <ul style="padding-left: 18px; color: #475569; font-size: 13.5px; line-height: 1.8; margin-bottom: 24px;">
+        <li>Fotokopi Ijazah / Surat Keterangan Lulus SMP (2 lembar)</li>
+        <li>Fotokopi Kartu Keluarga (KK) & Akta Kelahiran (2 lembar)</li>
+        <li>Pas foto berwarna terbaru ukuran 3x4 (3 lembar)</li>
+        <li>Fotokopi Rapor SMP semester 1 - 5</li>
+        <li>Surat keterangan sehat dan tidak buta warna (khusus DKV & RPL)</li>
+      </ul>
+
+      <h3 style="color: #1E2761; margin-bottom: 12px; font-size: 19px;">📅 Gelombang Pendaftaran</h3>
+      <div style="background: #f8fafc; border-left: 4px solid #1E2761; padding: 12px 14px; margin-bottom: 12px; border-radius: 4px;">
+        <strong style="color: #0f172a; font-size: 13.5px;">Gelombang 1 (Jalur Prestasi & Minat):</strong>
+        <p style="margin: 4px 0 0; color: #64748b; font-size: 12.5px;">Januari — April 2026 (Potongan Biaya Gedung s.d 50%)</p>
+      </div>
+
+      <div style="background: #f8fafc; border-left: 4px solid #e11d48; padding: 12px 14px; margin-bottom: 24px; border-radius: 4px;">
+        <strong style="color: #0f172a; font-size: 13.5px;">Gelombang 2 (Jalur Reguler):</strong>
+        <p style="margin: 4px 0 0; color: #64748b; font-size: 12.5px;">Mei — Juli 2026 (Kuota Terbatas)</p>
+      </div>
+
+      <h3 style="color: #1E2761; margin-bottom: 12px; font-size: 19px;">📍 Lokasi & Kontak Sekretariat</h3>
+      <p style="color: #475569; font-size: 13.5px; line-height: 1.6; margin-bottom: 10px;">
+        <strong>Kampus SMK Antartika 2 Sidoarjo</strong><br>
+        Jl. Siwalanpanji, Kec. Buduran, Kabupaten Sidoarjo, Jawa Timur 61252
+      </p>
+      <p style="color: #475569; font-size: 13.5px; line-height: 1.6;">
+        📞 <strong>WhatsApp PPDB:</strong> 0812-3456-7890<br>
+        ✉️ <strong>Email:</strong> info@smkantartika2-sda.sch.id
+      </p>
+    </div>
+
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <div class="footer">
+    <p>&copy; 2026 SMK Antartika 2 Sidoarjo. Disusun oleh Rakha Dzaky Firdaus (XI RPL 3).</p>
+    <div class="social">
+      <a href="index.html">Home</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="jurusan.html">Jurusan</a>
+      <a href="testimoni.html">Testimoni</a>
+    </div>
+  </div>
+
+</body>
+</html>
